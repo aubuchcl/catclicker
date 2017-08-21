@@ -22,16 +22,14 @@ for(var i = 0; i < catPics.length; i++){
 	countElement.id = "count"+i
 
 	var count = 0
-	catElement.addEventListener('click', (function(numCount, numId){
+	catElement.addEventListener('click',
+		                       (function(numCount, numId){
 		return function(){
-			console.log(numId)
-			console.log(numCount)
 			numCount += 1
 			var x = document.getElementById("count"+numId)
-			console.log(x)
-			x.innerHTML = "count" + numCount
-
-
+			x.innerHTML = "This picture has been clicked <em>"
+			               + numCount +
+			               "</em> times!!!"
 		};
 	})(count, i));
 }
