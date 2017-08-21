@@ -1,24 +1,3 @@
-// // console.log("hello")
-// var counterId = document.getElementById('counter');
-// var catClicks = document.getElementById('cat');
-// var count = 0;
-// catClicks.addEventListener('click', function(){
-// 	// add counter
-// 	count += 1;
-// 	counterId.innerHTML = "Click count: " + count;
-
-// }, false);
-
-// var counterId2 = document.getElementById('counter2');
-// var catClicks2 = document.getElementById('cat2');
-// var count2 = 0;
-// catClicks2.addEventListener('click', function(){
-// 	// add counter
-// 	count2 += 1;
-// 	counterId2.innerHTML = "Click count: " + count2;
-
-// }, false);
-
 var catPics = ['cat.jpg', 'cat2.jpg', 'cat3.jpg', 'cat4.jpg', 'cat5.jpg']
 
 for(var i = 0; i < catPics.length; i++){
@@ -40,24 +19,6 @@ for(var i = 0; i < catPics.length; i++){
 	catElement.id = catNoExtension;
 	catElement.src = cat;
 
-	// countElement id
-	// countElement.id = "count"+i
-
-	// var count = 0
-	// catElement.addEventListener('click', (function(numId){
-	// 	return function(){
-	// 		console.log(numId)
-	// 		console.log(count)
-	// 		count += 1
-	// 		var x = document.getElementById("count"+numId)
-	// 		console.log(x)
-	// 		x.innerHTML = "count" + count
-
-
-	// 	};
-	// })(i));
-
-
 	countElement.id = "count"+i
 
 	var count = 0
@@ -73,9 +34,6 @@ for(var i = 0; i < catPics.length; i++){
 
 		};
 	})(count, i));
-
-
-
 }
 
 
