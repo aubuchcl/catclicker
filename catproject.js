@@ -21,17 +21,16 @@
 
         countElement.id = "count" + i;
 
-        var numCount = 0;
         catElement.addEventListener('click',
             (function () {
                 var currentEl = i;
                 var clicks = 0;
                 return function () {
-                    clicks += 1
-                    var x = document.getElementById("count" + currentEl)
+                    clicks += 1;
+                    var x = document.getElementById("count" + currentEl);
                     x.innerHTML = "This picture has been clicked <em>"
                         + clicks +
-                        "</em> times!!!"
+                        "</em> times!!!";
                 };
             })());
     }
